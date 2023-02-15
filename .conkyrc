@@ -1,5 +1,3 @@
-> ~/.conkyrc
-cat <<EOT >> ~/.conkyrc
 conky.config = {
 	
 	update_interval = 1,
@@ -81,4 +79,3 @@ ${top name 8} $alignr ${top pid 8} ${top cpu 8}% ${top mem 8}%
 ${top name 9} $alignr ${top pid 9} ${top cpu 9}% ${top mem 9}%
 ${top name 10} $alignr ${top pid 10} ${top cpu 10}% ${top mem 10}%
 ]];
-EOT
