@@ -37,6 +37,7 @@ sudo apt install gnome-shell-extension-manager -y
 sudo apt install libqt5svg5 qml-module-qtquick-controls -y
 sudo apt-get -y install pulseeffects
 sudo apt install -y neofetch
+sudo apt install -y gnome-tweaks
 
 # Other Downloads
 mkdir ~/.autoeq
