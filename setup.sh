@@ -67,7 +67,8 @@ wget https://images3.alphacoders.com/677/677357.png?dl=1 -O ~/Pictures/Eden-Nebu
 
 # Configure Services
 cp /etc/conky/conky.conf ~/.conkyrc
-wget https://github.com/TheElevatedOne/UbuntuStartupInstall/raw/main/conky-setup.sh -O ~/conky-setup.sh
+sudo rm ~/.conkyrc
+wget https://raw.githubusercontent.com/TheElevatedOne/UbuntuStartupInstall/main/.conkyrc -O ~/.conkyrc
 bash ~/conky-setup.sh
 sudo systemctl enable ssh
 sudo systemctl start ssh
