@@ -21,6 +21,7 @@ sudo apt install --install-recommends wine-stable -y
 
 # Add repos
 sudo add-apt-repository ppa:trebelnik-stefina/grub-customizer
+sudo add-apt-repository ppa:appimagelauncher-team/stable
 
 sudo apt update
 
@@ -38,6 +39,7 @@ sudo apt install libqt5svg5 qml-module-qtquick-controls -y
 sudo apt-get -y install pulseeffects
 sudo apt install -y neofetch
 sudo apt install -y gnome-tweaks
+sudo apt install appimagelauncher -y
 
 # Other Downloads
 mkdir ~/.autoeq
