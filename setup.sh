@@ -43,8 +43,8 @@ sudo apt install appimagelauncher -y
 
 # Other Downloads
 mkdir ~/.autoeq
-wget https://github.com/jaakkopasanen/AutoEq/blob/master/results/oratory1990/harman_over-ear_2018/Logitech%20G433/Logitech%20G433%20minimum%20phase%2048000Hz.wav -O ~/.autoeq/G433.wav
-wget https://github.com/jaakkopasanen/AutoEq/blob/master/results/rtings/rtings_harman_in-ear_2019v2/Logitech%20G333/Logitech%20G333%20minimum%20phase%2048000Hz.wav -O ~/.autoeq/G333.wav
+wget https://github.com/jaakkopasanen/AutoEq/raw/master/results/rtings/rtings_harman_in-ear_2019v2/Logitech%20G333/Logitech%20G333%20minimum%20phase%2048000Hz.wav -O ~/.autoeq/G433.wav
+wget https://github.com/jaakkopasanen/AutoEq/raw/master/results/oratory1990/harman_over-ear_2018/Logitech%20G433/Logitech%20G433%20minimum%20phase%2048000Hz.wav -O ~/.autoeq/G333.wav
 
 
 # Installation files
