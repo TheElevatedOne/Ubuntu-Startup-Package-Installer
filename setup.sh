@@ -23,6 +23,7 @@ sudo apt install --install-recommends wine-stable -y
 # Add repos
 sudo add-apt-repository ppa:trebelnik-stefina/grub-customizer -y
 sudo add-apt-repository ppa:appimagelauncher-team/stable -y
+sudo add-apt-repository ppa:lakinduakash/lwh -y
 
 sudo apt update
 
@@ -48,6 +49,7 @@ sudo apt install gparted -y
 sudo apt install git -y
 sudo apt install inkscape -y
 sudo apt install make -y
+sudo apt install linux-wifi-hotspot -y
 
 # Headphone EQ Presets
 mkdir ~/.autoeq
