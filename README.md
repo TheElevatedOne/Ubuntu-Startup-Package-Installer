@@ -6,32 +6,32 @@
 > It's a bit tedious to add all the packages you want, but you won't have to do it a second time. Just download and run.
 ## Installation consists of:
 ### From repositories:
-    Wine
-    Grub Customizer
-    Conky
-    Flatpak
-    Gnome Shell Extensions & Extension Manager
-    OpenSSH Server & XRDP
-    Aptitude
-    Pulse Effects
-    Neofetch
-    Gnome Tweaks
-    AppImageLauncher
-    Java Runtime Engine
+- Wine
+- Grub Customizer
+- Conky
+- Flatpak
+- Gnome Shell Extensions & Extension Manager
+- OpenSSH Server & XRDP
+- Aptitude
+- Pulse Effects
+- Neofetch
+- Gnome Tweaks
+- AppImageLauncher
+- Java Runtime Engine
 ### From .deb files:
 - Steam
-    Lutris
-    Chrome
-    Harmonoid
-    ocs-url   (Makes installation from gnome-look easier)
+- Lutris
+- Chrome
+- Harmonoid
+- ocs-url   (Makes installation from gnome-look easier)
 ### Themes:
-    [Flat Remix Gnome](https://github.com/daniruiz/flat-remix-gnome)
-    [Flat Remix GTK](https://github.com/daniruiz/flat-remix-gtk)
-    [Tela Circle](https://github.com/vinceliuice/Tela-circle-icon-theme)
-    [Distro Grub](https://github.com/AdisonCavani/distro-grub-themes) (Asus)
-    [Oreo Cursors](https://github.com/varlesh/oreo-cursors) (Default + Custom | Not Spark) 
+- [Flat Remix Gnome](https://github.com/daniruiz/flat-remix-gnome)
+- [Flat Remix GTK](https://github.com/daniruiz/flat-remix-gtk)
+- [Tela Circle](https://github.com/vinceliuice/Tela-circle-icon-theme)
+- [Distro Grub](https://github.com/AdisonCavani/distro-grub-themes) (Asus)
+- [Oreo Cursors](https://github.com/varlesh/oreo-cursors) (Default + Custom | Not Spark) 
 ### Extensions:
-    TBA
+- TBA
 ## Additional things:
 - AutoEQ Profiles for headphones
   - https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md
