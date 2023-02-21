@@ -24,6 +24,14 @@
     Chrome
     Harmonoid
     ocs-url   (Makes installation from gnome-look easier)
+### Themes:
+    [Flat Remix Gnome](https://github.com/daniruiz/flat-remix-gnome)
+    [Flat Remix GTK](https://github.com/daniruiz/flat-remix-gtk)
+    [Tela Circle](https://github.com/vinceliuice/Tela-circle-icon-theme)
+    [Distro Grub](https://github.com/AdisonCavani/distro-grub-themes) (Asus)
+    [Oreo Cursors](https://github.com/varlesh/oreo-cursors) (Default + Custom | Not Spark) 
+### Extensions:
+    TBA
 ## Additional things:
 - AutoEQ Profiles for headphones
   - https://github.com/jaakkopasanen/AutoEq/blob/master/results/INDEX.md
