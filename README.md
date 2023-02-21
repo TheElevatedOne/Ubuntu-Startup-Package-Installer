@@ -1,7 +1,6 @@
 # Ubuntu Startup Package Installer
 ## Personal Startup Installer for Ubuntu 22.04 (Gnome 42)
 
----
 > Please Fork the Project before Customizing for Your Use case.
 
 > It's a bit tedious to add all the packages you want, but you won't have to do it a second time. Just download and run.
