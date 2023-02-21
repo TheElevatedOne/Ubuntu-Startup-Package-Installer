@@ -19,7 +19,7 @@
     AppImageLauncher
     Java Runtime Engine
 ### From .deb files:
-    - Steam
+- Steam
     Lutris
     Chrome
     Harmonoid
