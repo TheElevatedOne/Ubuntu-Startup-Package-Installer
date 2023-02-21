@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+function pause(){
+ read -s -n 1 -p "Press any key to continue after downloading . . ."
+ echo ""
+}
+
 # Upgrade
 sudo apt update
 sudo apt upgrade -y
@@ -37,6 +42,8 @@ sudo apt install -y neofetch
 sudo apt install -y gnome-tweaks
 sudo apt install appimagelauncher -y
 sudo apt install default-jre -y
+sudo apt install ruby -y
+sudo apt install p7zip-full p7zip-rar -y
 
 # Headphone EQ Presets
 mkdir ~/.autoeq
@@ -46,8 +53,8 @@ wget https://github.com/jaakkopasanen/AutoEq/raw/master/results/oratory1990/harm
 
 # Installation files
 mkdir ~/.deb
-wget https://github.com/TheElevatedOne/UbuntuStartupInstall/raw/main/install%20files/harmonoid.deb -O ~/.deb/harmonoid.deb
-wget https://github.com/TheElevatedOne/UbuntuStartupInstall/raw/main/install%20files/ocs-url.deb -O ~/.deb/ocs-url.deb
+wget https://github.com/TheElevatedOne/Ubuntu-Startup-Package-Installer/raw/main/Debian%20Installation%20Files/harmonoid.deb -O ~/.deb/harmonoid.deb
+wget https://github.com/TheElevatedOne/Ubuntu-Startup-Package-Installer/raw/main/Debian%20Installation%20Files/ocs-url.deb -O ~/.deb/ocs-url.deb
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -O ~/.deb/chrome.deb
 wget https://cdn.akamai.steamstatic.com/client/installer/steam.deb -O ~/.deb/steam.deb
 wget https://github.com/lutris/lutris/releases/download/v0.5.12/lutris_0.5.12_all.deb -O ~/.deb/lutris.deb
@@ -64,6 +71,45 @@ sudo apt --fix-broken install -y      # Because I don't want to spend my time fi
 wget https://images.alphacoders.com/786/786599.png?dl=1 -O ~/Pictures/Atlantis-On-Fire.png
 wget https://images3.alphacoders.com/791/791016.png?dl=1 -O ~/Pictures/The-Dark-Dimension.png
 wget https://images3.alphacoders.com/677/677357.png?dl=1 -O ~/Pictures/Eden-Nebula.png
+
+# Themes
+mkdir ~/.grub-theme
+wget https://github.com/AdisonCavani/distro-grub-themes/raw/master/themes/asus.tar ~/.grub-theme/asus.tar
+
+mkdir ~/.install-theme
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git ~/.install-theme/tela-circle
+git clone https://github.com/varlesh/oreo-cursors.git ~/.install-theme/oreo-cursors
+
+# Cursor Generator
+rm ~/.install-theme/oreo-cursors/generator/colours.conf
+wget https://github.com/TheElevatedOne/Ubuntu-Startup-Package-Installer/raw/main/Debian%20Installation%20Files/colours.conf -O ~/.install-theme/oreo-cursors/generator/colours.conf
+
+cd ~/.install-theme/oreo-cursors
+ruby generator/convert.rb
+make build
+sudo make install
+cd ~
+
+# GTK Theme
+mkdir ~/.themes
+echo "Downloading a Github Directory | Opening Firefox"
+sleep 5
+firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gtk%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-GTK-Red-Darkest-Solid
+pause
+7z x -y "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip" -o~/.themes/Flat-Remix-GTK-Red-Darkest-Solid
+
+# Gnome Theme
+echo "Downloading a Github Directory | Opening Firefox"
+sleep 5
+firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gnome%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-Red-Darkest-fullPanel
+pause
+7z x -y "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip" -o~/.themes/Flat-Remix-Red-Darkest-fullPanel
+
+# Icon Theme
+cd ~/.install-theme/tela-circle
+chmod +x install.sh
+./install.sh
+cd ~
 
 # Configure Services
 mkdir ~/.appimage
@@ -84,4 +130,6 @@ sudo rm -rf ~/.deb
 sudo rm -f ~/conky-setup.sh
 sudo rm -f ~/winehq-jammy.sources
 sudo rm -f ~/winehq.key
-
+sudo rm -rf ~/.install-theme
+rm "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip"
+rm "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip"
