@@ -74,7 +74,7 @@ wget https://images3.alphacoders.com/677/677357.png?dl=1 -O ~/Pictures/Eden-Nebu
 
 # Themes
 mkdir ~/.grub-theme
-wget https://github.com/AdisonCavani/distro-grub-themes/raw/master/themes/asus.tar ~/.grub-theme/asus.tar
+wget https://github.com/AdisonCavani/distro-grub-themes/raw/master/themes/asus.tar -O ~/.grub-theme/asus.tar
 
 mkdir ~/.install-theme
 git clone https://github.com/vinceliuice/Tela-circle-icon-theme.git ~/.install-theme/tela-circle
@@ -91,19 +91,19 @@ sudo make install
 cd ~
 
 # GTK Theme
-mkdir ~/.themes
-echo "Downloading a Github Directory | Opening Firefox"
-sleep 5
-firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gtk%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-GTK-Red-Darkest-Solid
-pause
-7z x -y "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip" -o~/.themes/Flat-Remix-GTK-Red-Darkest-Solid
+#mkdir ~/.themes
+#echo "Downloading a Github Directory | Opening Firefox"
+#sleep 5
+#firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gtk%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-GTK-Red-Darkest-Solid
+#pause
+#7z x -y "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip" -o~/.themes/Flat-Remix-GTK-Red-Darkest-Solid
 
 # Gnome Theme
-echo "Downloading a Github Directory | Opening Firefox"
-sleep 5
-firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gnome%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-Red-Darkest-fullPanel
-pause
-7z x -y "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip" -o~/.themes/Flat-Remix-Red-Darkest-fullPanel
+#echo "Downloading a Github Directory | Opening Firefox"
+#sleep 5
+#firefox https://download-directory.github.io/?url=https%3A%2F%2Fgithub.com%2Fdaniruiz%2Fflat-remix-gnome%2Ftree%2Fmaster%2Fthemes%2FFlat-Remix-Red-Darkest-fullPanel
+#pause
+#7z x -y "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip" -o~/.themes/Flat-Remix-Red-Darkest-fullPanel
 
 # Icon Theme
 cd ~/.install-theme/tela-circle
@@ -131,5 +131,5 @@ sudo rm -f ~/conky-setup.sh
 sudo rm -f ~/winehq-jammy.sources
 sudo rm -f ~/winehq.key
 sudo rm -rf ~/.install-theme
-rm "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip"
-rm "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip"
+#rm "~/Downloads/daniruiz flat-remix-gtk master themes-Flat-Remix-GTK-Red-Darkest-Solid.zip"
+#rm "~/Downloads/daniruiz flat-remix-gnome master themes-Flat-Remix-Red-Darkest-fullPanel.zip"
