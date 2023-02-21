@@ -44,6 +44,10 @@ sudo apt install appimagelauncher -y
 sudo apt install default-jre -y
 sudo apt install ruby -y
 sudo apt install p7zip-full p7zip-rar -y
+sudo apt install gparted -y
+sudo apt install git -y
+sudo apt install inkscape -y
+sudo apt install make -y
 
 # Headphone EQ Presets
 mkdir ~/.autoeq
