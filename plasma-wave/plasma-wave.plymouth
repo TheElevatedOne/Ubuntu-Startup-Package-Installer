@@ -1,0 +1,9 @@
+[Plymouth Theme]
+Name=plasma-wave
+Description=display kinda fireworks
+Comment=created By Aditya Shakya (@adi1090x)
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/plasma-wave
+ScriptFile=/usr/share/plymouth/themes/plasma-wave/plasma-wave.script
